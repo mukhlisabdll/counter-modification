@@ -1,0 +1,86 @@
+/* Impor font */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* Variabel warna dan font */
+:root {
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-black: #222;
+  --clr-white: #fff;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --transition: all 0.3s linear;
+}
+
+/* Reset margin dan padding */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya untuk seluruh halaman */
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container untuk setiap counter */
+.container {
+  text-align: center;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  width: 90vw;
+  max-width: 500px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading untuk setiap counter */
+.container h2 {
+  font-family: var(--ff-primary);
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Tampilan nilai stok */
+.value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--clr-grey-1);
+  margin-bottom: 1.5rem;
+}
+
+/* Tombol untuk pengaturan stok */
+.btn {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  text-transform: uppercase;
+  color: var(--clr-grey-1);
+  background: transparent;
+  border: 2px solid var(--clr-primary-5);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+/* Efek saat tombol di-hover */
+.btn:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
